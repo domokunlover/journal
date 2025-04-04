@@ -23,7 +23,7 @@
 <body>
 <div id="badges">
     <input type="text" id="search" placeholder="🔎 Sticker Achievements...">
-    <hr id="border">
+    <br><br>
     <div class="gallery">
 
         <! -- BAKE A CAKE -->
@@ -2049,7 +2049,7 @@
         color: darkgoldenrod;
         font-size: 30px;
         text-align: center;
-        font-family: 'patrick hand';
+        font-family: ms pgothic, 'patrick hand';
         text-shadow: -1px 0 gold, 0 1px gold, 1px 0 gold, 0 -1px gold, 0 0;
     }
     @font-face {
@@ -2074,19 +2074,20 @@
         height: 400px;
     }
     #badges img {
-        border: palegoldenrod 5px solid;
+        border: palegoldenrod 2px solid;
         border-radius: 100px;
         height: 100px;
         width: 100px;
         margin-top: 15px;
     }
     #search {   
-        padding: 10px; 
+        padding: 5px; 
         width: 90%;
         font-size: 30px;
         font-family: ms pgothic, 'Patrick Hand';
         background-color: rgba(255, 255, 255, 0.719);
-        border: none;
+        border: 1px solid gray;
+        border-radius: 5px;
     }
     .gallery {
         display: flex;
@@ -2096,10 +2097,9 @@
         gap: 10px;
         max-height: 450px;
         overflow: auto;
-        background: rgba(135, 207, 235, 0.616);
-        border: 5px solid blue;
-        border-radius: 30px;
-        scrollbar-color: rgba(255, 255, 255, 0.582) transparent;
+        border: 2px solid gray;
+        background-color: rgba(211, 211, 211, 0.212);
+        border-radius: 10px;
     }
     .gallery img {
         width: 150px;
@@ -2111,6 +2111,28 @@
         display: none !important;
         position: absolute !important;
     }
+
+    ::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+	}
+
+	::-webkit-scrollbar-thumb:vertical {
+		background: white;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+
+	::-webkit-scrollbar-thumb:horizontal {
+		background: white;
+		border: 1px solid black;
+		border-radius: 10px;
+	}
+
+	::-webkit-scrollbar-track {
+		border-radius: 10px;
+		background: transparent;
+	}
 
 
 </style>
